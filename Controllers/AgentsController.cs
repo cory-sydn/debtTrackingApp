@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using debtTrackingApp.Models.EntityModel;
+using Microsoft.AspNetCore.Cors;
 
 namespace debtTrackingApp.Controllers
 {
+
+    [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class AgentsController : ControllerBase
@@ -20,7 +23,7 @@ namespace debtTrackingApp.Controllers
             _context = context;
         }
 
-        // GET: api/Agents
+        // GET: api/Agents       
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Agent>>> GetAgents()
         {
@@ -32,7 +35,7 @@ namespace debtTrackingApp.Controllers
         }
 
         // GET: api/Agents/5
-        [HttpGet("{id}")]
+        [HttpGet("{id}")]       
         public async Task<ActionResult<Agent>> GetAgent(int id)
         {
           if (_context.Agents == null)
@@ -77,7 +80,7 @@ namespace debtTrackingApp.Controllers
                 }
             }
 
-            return NoContent();
+            return Accepted();
         }
 
         // POST: api/Agents
