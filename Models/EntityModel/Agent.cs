@@ -5,7 +5,7 @@ namespace debtTrackingApp.Models.EntityModel;
 
 public partial class Agent
 {
-    public int Id { get; set; }
+    public int? Id { get; set; }
 
     public string? AgentName { get; set; }
 

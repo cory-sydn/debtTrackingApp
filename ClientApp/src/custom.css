@@ -16,3 +16,40 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: forestgreen;
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
+  outline: none
+}
+
+tr td:last-child {
+  width: 20px;
+  white-space: nowrap;
+}
+
+.unvisible {
+  display: none
+}
+
+input[type="checkbox"]:disabled  {
+  background: #0366d6;
+  opacity: 0.88;
+}
+
+input[type="checkbox"]:disabled {
+  background: #0366d6;
+  border: 2px solid #1861ac;
+  opacity: 0.88;
+}
