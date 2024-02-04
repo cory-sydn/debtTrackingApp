@@ -1,0 +1,190 @@
+﻿.pageContainer{
+  padding-bottom: 60px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 330px;
+  max-width: 700px;
+  width: 70%;
+  border: 1px solid #0080808e;
+  padding: 32px 32px 8px;
+  border-radius: 8px;
+  box-shadow: inset 15px 30px 55px 85px #09090909, 0 0 0 2px #09090909, 2px 3px 9px #13091110;
+  margin-bottom: 24px
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.formLabel {
+  margin: 8px 0 2px 0;
+  color: #191919;
+  font-weight:500;
+}
+
+.formInput {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #0c1b70;
+  padding: 8px 12px 8px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  outline: none;
+}
+
+.passwordInput {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #0c1b70;
+  padding: 8px 12px 8px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+  outline: none;
+  position: relative;
+}
+
+
+.formInput::placeholder, passwordInput::placeholder {
+  font-style: oblique;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.formInput:focus, .passwordInput:focus {
+  outline: none;
+  background: none;
+}
+
+input[class$="Input"]:hover {
+  color: red;
+  border: 5px solid red;
+}
+
+.formInput, passwordInput:hover {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+
+.formIcon {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -25px;
+  cursor:pointer;
+}
+
+
+input[type="checkbox"]:disabled {
+  background: #0366d6;
+}
+
+input[type="checkbox"]:disabled {
+  background: #0366d6;
+  border: 2px solid #1861ac;
+}
+
+.saveButton {
+  background: #aeefde;
+  color: black;
+  font-weight: 600;
+  padding: 4px 16px;
+  margin-left: auto;
+  margin-top: 8px;
+  min-width: 120px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid teal;
+  border-radius: 12px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.saveButtonXS {
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px 8px;
+  margin-left: auto;
+  margin-top: 0px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  position: relative;
+}
+
+
+.addButton {
+  background: #aeefde;
+  color: black;
+  font-weight: 600;
+  padding: 15px;
+  margin: 20px;
+  min-width: 180px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid teal;
+  border-radius: 8px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.tdStyle {
+  height: 50px;
+  color: black;
+  font-size: 20px;
+}
+
+.tdStyle::selection, .formInput::selection, .passwordInput::selection {
+  color: orange;
+}
+
+
+.trStyle {
+  max-width: 100%;
+  white-space: nowrap;
+  background: #c7e3ed;
+}
+
+.trStyle:nth-of-type(2n+1) {
+  background: #D2F2F9;
+}
+
+.tableStyle {
+  white-space: nowrap;
+  width: 100%;
+}
+
+.tableHeader {
+  color: aliceblue;
+  background: #189AB4;
+  padding: 2px;
+}
+
+
+.massage {
+  font-weight:300;
+  font-size: 12px;
+  color: forestgreen;
+  position: absolute;
+  margin-top:-22px;
+  margin-left:-15px
+}
